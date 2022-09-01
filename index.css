@@ -1,0 +1,73 @@
+.grid {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  margin: 5px;
+  background-color: #2c2e36;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 150px;
+  width: 150px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(325deg, #6f00fc 0%, #8914b7 50%, #f052d6 100%);
+}
+
+.match {
+  background-image: none !important;
+}
+
+.card {
+  position: relative;
+  transition: all 0.4s linear;
+  transform-style: preserve-3d;
+  margin: 5px;
+}
+
+.card,
+.back,
+.front {
+  height: 150px;
+  width: 150px;
+}
+
+.back,
+.front {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front {
+  background: #c071e5 url("./img/free-icon-heart-4782331.png") no-repeat center
+    center / contain;
+}
+
+.back {
+  transform: rotateY(180deg);
+  background-color: white;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.selected {
+  transform: rotateY(180deg);
+}
+
+.match .front {
+  background: linear-gradient(325deg, #6f00fc 0%, #a1245c 50%, #f052d6 100%);
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}
